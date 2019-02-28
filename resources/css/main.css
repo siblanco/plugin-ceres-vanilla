@@ -55,3 +55,8 @@
       @media screen and (min-width: 1200px) {
         .frontpage-siegel__container img {
           max-width: 10rem; } }
+
+.frontpage-kategorien {
+  background-color: #0b0c26;
+  color: #fff;
+  text-align: center; }
