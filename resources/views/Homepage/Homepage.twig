@@ -27,22 +27,20 @@
 
 	{% set childCat = services.category.getChildren(452, lang) %}
 
-	<div class="container-fluid frontpage-kategorien">
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<img src="{{ child.imagePath }}" alt="">
-			</div>
-			<div class="col-12 col-md-6">
-				<img src="{{ child.image2Path }}" alt="">
-				<h2>{{ child.name }}</h2>
-				<p>{{ child.description }}</p>
-				<a href="/stars-designer/{{ child.nameUrl }}">Zu {{ child.name }}</a>
+	{% for child in childCat %}
+		<div class="container-fluid frontpage-kategorien">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<img src="{{ child.imagePath }}" alt="">
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{ child.image2Path }}" alt="">
+					<h2>{{ child.name }}</h2>
+					<p>{{ child.description }}</p>
+					<a href="/stars-designer/{{ child.nameUrl }}">Zu {{ child.name }}</a>
+				</div>
 			</div>
 		</div>
-	</div>
-
-	{% for child in childCat %}
-
 	{% endfor %}
 
 {% endblock %}
