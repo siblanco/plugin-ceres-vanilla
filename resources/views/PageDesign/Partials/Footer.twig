@@ -1,8 +1,38 @@
 <!-- Insert markup for footer here -->
-<div class="container">
-	<div class="row">
-		<div class="col-12">
-			<h1>Hello World Footer from vanilla ceres</h1>
-		</div>
-	</div>
-</div>
+<footer>
+	{# Back-Top Button #}
+	<div class="{% if topButtonPosition == "right" %}back-to-top{% else %}back-to-top-center{% endif %} hidden-sm-down">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+  <div class="to-top d-md-none" v-scroll-to-top>
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </div>
+  {# /// Back-Top Button #}
+
+	{% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
+	  <div class="copyright text-center my-3">
+	      <div class="static-link-list">
+          {% autoescape false %}
+            <a href="{{ urls.cancellationRights }}">{{ trans("Ceres::Template.footerCancellationRight", {"hyphen": "&shy;"}) }}</a>
+            {% if config("Ceres.footer.cancellation_use_pdf") == "true" %}
+                <a href="{{ config('Ceres.footer.cancellation_pdf_path') }}" target="_blank">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
+            {% else %}
+                <a href="{{ urls.cancellationForm }}">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
+            {% endif %}
+            <a href="{{ urls.legalDisclosure }}">{{ trans("Ceres::Template.footerLegalDisclosure") }}</a>
+            <a href="{{ urls.privacyPolicy }}">{{ trans("Ceres::Template.footerPrivacyPolicy", {"hyphen": "&shy;"}) }}</a>
+            <a href="{{ urls.gtc }}">{{ trans("Ceres::Template.footerGtc") }}</a>
+            {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
+                <a href="{{ urls.contact }}">{{ trans("Ceres::Template.footerContact") }}</a>
+            {% endif %}
+	        {% endautoescape %}
+	      </div>
+	      <a rel="nofollow" href="https://www.plentymarkets.eu">
+          <img alt="Startattoo Company Logo" class="svg plenty-brand" src="{{ plugin_path('CeresVanilla') }}/images/logos/startattoo_logo.png">
+	      </a>
+	      <br>
+	      <small>&copy; Copyright {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
+	  </div>
+
+</footer>
