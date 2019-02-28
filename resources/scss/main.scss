@@ -1,5 +1,6 @@
 $pink: #c70c6f;
 $gelb: #dea800;
+$blau: #0b0c26;
 
 .frontpage {
 
@@ -32,6 +33,7 @@ $gelb: #dea800;
 			display: flex;
 			align-items: center;
 			flex-flow: column wrap;
+			justify-content: center;
 
 			&--text {
 				h1 {
@@ -39,8 +41,21 @@ $gelb: #dea800;
 					font-size: 1.3rem;
 					margin-bottom: .5rem;
 
+					@media screen and (min-width: 992px) {
+						font-size: 1.5rem;
+					}
+					@media screen and (min-width: 1200px) {
+						font-size: 2rem;
+					}
+
 					span {
 						font-size: 1rem;
+						@media screen and (min-width: 992px) {
+							font-size: 1.1rem;
+						}
+						@media screen and (min-width: 1200px) {
+							font-size: 1.3rem;
+						}
 					}
 				}
 			}
