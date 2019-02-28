@@ -28,7 +28,6 @@
 	{% set childCat = services.category.getChildren(452, lang) %}
 
 	{% for child in childCat %}
-		<li>{{child}}</li>
 		<div class="container-fluid frontpage-kategorien">
 			<div class="row">
 				<div class="col-12 col-md-6">
@@ -36,9 +35,9 @@
 				</div>
 				<div class="col-12 col-md-6">
 					<img src="{{ child.image2Path }}" alt="">
-					<h2>{{ child.name }}</h2>
-					<p>{{ child.description }}</p>
-					<a href="/stars-designer/{{ child.nameUrl }}">Zu {{ child.name }}</a>
+					<h2>{{ child.details[0].name }}</h2>
+					<p>{{ child.details[0].description }}</p>
+					<a href="/stars-designer/{{ child.details[0].nameUrl }}">Zu {{ child.details[0].name }}</a>
 				</div>
 			</div>
 		</div>
