@@ -4,7 +4,7 @@
 
 	<!-- Insert markup for homepage here -->
 
-  <div class="container-fluid frontpage-teasers" style="background-image: url('{{ plugin_path('CeresVanilla') }}/images/frontpage/Header-Bilder-1.jpg')">
+  <div class="container-fluid frontpage-teasers">
   	
   </div>
 
@@ -14,7 +14,6 @@
 	<script>
 		// Header Bilder switch
 		document.addEventListener('DOMContentLoaded', function() {
-			console.log('test');
 
 			let pluginPath = '{{ plugin_path("CeresVanilla")}}/images/frontpage';
 			let images = [pluginPath + '/Header-Bilder-1.jpg', pluginPath + '/Header-Bilder-2.jpg', pluginPath + '/Header-Bilder-3.jpg', pluginPath + '/Header-Bilder-4.jpg', pluginPath + '/Header-Bilder-5.jpg'];
@@ -22,8 +21,6 @@
 			let randomNumber = Math.floor((Math.random() * 5));
 
 			document.querySelector('.frontpage-teasers').style.backgroundImage = images[randomNumber];	
-			console.log(randomNumber);
-			console.log(document.querySelector('.frontpage-teasers'));		
 		});
 
 	</script>
