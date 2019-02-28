@@ -31,10 +31,10 @@
 			<div class="row">
 	{% for child in childCat %}
 				<div class="col-12 col-md-6">
-					<img src="/documents/{{ child.details[0].imagePath }}" alt="">
+					<img src="{{ plugin_path('CeresVanilla')}}/images/frontend/home-{{ child.details[0].name }}.jpg" alt="{{ child.details[0].name }}">
 				</div>
 				<div class="col-12 col-md-6">
-					<img src="/documents/{{ child.details[0].image2Path }}" alt="">
+					<img src="{{ plugin_path('CeresVanilla')}}/images/frontend/sterne-{{ child.details[0].name }}.jpg" alt="{{ child.details[0].name }}">
 					<h2>{{ child.details[0].name }}</h2>
 					<p>{{ child.details[0].description }}</p>
 					<a href="/stars-designer/{{ child.details[0].nameUrl }}">Zu {{ child.details[0].name }}</a>
