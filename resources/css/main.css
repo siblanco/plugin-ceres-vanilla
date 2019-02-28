@@ -60,3 +60,5 @@
   background-color: #0b0c26;
   color: #fff;
   text-align: center; }
+  .frontpage-kategorien img {
+    max-width: 100%; }
