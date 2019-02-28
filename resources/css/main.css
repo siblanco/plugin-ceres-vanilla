@@ -1,1 +1,4 @@
-/* Enter your CSS here */
+.frontpage-teasers {
+  min-height: 35rem;
+  background-size: cover;
+  background-position: center; }
