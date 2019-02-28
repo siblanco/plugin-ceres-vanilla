@@ -1,5 +1,16 @@
-.frontpage-teasers {
-	min-height: 35rem;
-	background-size: cover;
-	background-position: center;
+$pink: #c70c6f;
+$gelb: #dea800;
+
+.frontpage {
+
+	&-teasers {
+		min-height: 40rem;
+		background-size: cover;
+		background-position: center;
+	}
+	&-siegel {
+		background-image: linear-gradient(to left, rgba(11,12,38,1), 12%, rgba(222,168,0,1) 88%, rgba(11,12,38,1));
+		min-height: 10rem;
+		padding: 20px 0;
+	}
 }

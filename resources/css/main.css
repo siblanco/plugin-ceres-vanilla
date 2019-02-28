@@ -1,4 +1,9 @@
 .frontpage-teasers {
-  min-height: 35rem;
+  min-height: 40rem;
   background-size: cover;
   background-position: center; }
+
+.frontpage-siegel {
+  background-image: linear-gradient(to left, #0b0c26, 12%, #dea800 88%, #0b0c26);
+  min-height: 10rem;
+  padding: 20px 0; }
