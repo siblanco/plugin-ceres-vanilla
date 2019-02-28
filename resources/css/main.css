@@ -4,6 +4,35 @@
   background-position: center; }
 
 .frontpage-siegel {
-  background-image: linear-gradient(to left, #0b0c26, 12%, #dea800 88%, #0b0c26);
+  background-color: #dea800;
   min-height: 10rem;
   padding: 20px 0; }
+  @media screen and (min-width: 992px) {
+    .frontpage-siegel {
+      background-image: linear-gradient(to left, #0b0c26, 8%, #dea800 92%, #0b0c26); } }
+  @media screen and (min-width: 1200px) {
+    .frontpage-siegel {
+      background-image: linear-gradient(to left, #0b0c26, 12%, #dea800 88%, #0b0c26); } }
+  .frontpage-siegel__textParent {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; }
+    .frontpage-siegel__textParent--text h1 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: .5rem; }
+      .frontpage-siegel__textParent--text h1 span {
+        font-size: 1rem; }
+  .frontpage-siegel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .frontpage-siegel__container img {
+      max-width: 5rem;
+      height: auto; }
+      @media screen and (min-width: 992px) {
+        .frontpage-siegel__container img {
+          max-width: 8rem; } }
+      @media screen and (min-width: 1200px) {
+        .frontpage-siegel__container img {
+          max-width: 10rem; } }

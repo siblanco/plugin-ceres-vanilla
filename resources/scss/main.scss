@@ -9,8 +9,52 @@ $gelb: #dea800;
 		background-position: center;
 	}
 	&-siegel {
-		background-image: linear-gradient(to left, rgba(11,12,38,1), 12%, rgba(222,168,0,1) 88%, rgba(11,12,38,1));
+		background-color: $gelb;
 		min-height: 10rem;
 		padding: 20px 0;
+
+		@media screen and (min-width: 992px) {
+			background-image: linear-gradient(to left, rgba(11,12,38,1), 8%, rgba(222,168,0,1) 92%, rgba(11,12,38,1));
+		}
+
+		@media screen and (min-width: 1200px) {
+			background-image: linear-gradient(to left, rgba(11,12,38,1), 12%, rgba(222,168,0,1) 88%, rgba(11,12,38,1));
+		}
+
+		&__textParent {
+			display: flex;
+			align-items: center;
+			flex-flow: column wrap;
+
+			&--text {
+				h1 {
+					font-weight: bold;
+					font-size: 1.3rem;
+					margin-bottom: .5rem;
+
+					span {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+
+		&__container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				max-width: 5rem;
+				height: auto;
+
+				@media screen and (min-width: 992px) {
+					max-width: 8rem;
+				}
+				@media screen and (min-width: 1200px) {
+					max-width: 10rem;
+				}
+			}
+		}
 	}
 }
