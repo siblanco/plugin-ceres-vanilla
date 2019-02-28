@@ -27,9 +27,9 @@
 
 	{% set childCat = services.category.getChildren(452, lang) %}
 
-	{% for child in childCat %}
 		<div class="container-fluid frontpage-kategorien">
 			<div class="row">
+	{% for child in childCat %}
 				<div class="col-12 col-md-6">
 					<img src="/documents/{{ child.details[0].imagePath }}" alt="">
 				</div>
@@ -39,9 +39,9 @@
 					<p>{{ child.details[0].description }}</p>
 					<a href="/stars-designer/{{ child.details[0].nameUrl }}">Zu {{ child.details[0].name }}</a>
 				</div>
+	{% endfor %}
 			</div>
 		</div>
-	{% endfor %}
 
 {% endblock %}
 
