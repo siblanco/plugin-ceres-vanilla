@@ -4,9 +4,16 @@ $gelb: #dea800;
 .frontpage {
 
 	&-teasers {
-		min-height: 40rem;
+		min-height: 30rem;
 		background-size: cover;
 		background-position: center;
+
+		@media screen and (min-width: 992px) {
+			min-height: 40rem;
+		}
+		@media screen and (min-width: 1400px) {
+			min-height: 45rem;
+		}
 	}
 	&-siegel {
 		background-color: $gelb;

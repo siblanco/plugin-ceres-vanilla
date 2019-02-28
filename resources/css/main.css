@@ -1,7 +1,13 @@
 .frontpage-teasers {
-  min-height: 40rem;
+  min-height: 30rem;
   background-size: cover;
   background-position: center; }
+  @media screen and (min-width: 992px) {
+    .frontpage-teasers {
+      min-height: 40rem; } }
+  @media screen and (min-width: 1400px) {
+    .frontpage-teasers {
+      min-height: 45rem; } }
 
 .frontpage-siegel {
   background-color: #dea800;
