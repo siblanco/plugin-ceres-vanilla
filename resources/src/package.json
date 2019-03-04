@@ -4,7 +4,8 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "start": "postcss scss/main.scss -o ../css/main.css -w"
+    "build:css": "node-sass scss/main.scss ../css/main.css -w",
+    "compile:css": "postcss ../css/main.css -o ../css/main.css"
   },
   "keywords": [],
   "author": "",

@@ -85,6 +85,12 @@ $blau: #0b0c26;
 		color: #fff;
 		text-align: center;
 
+		&--text {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+
 		img {
 			max-width: 100%;
 		}
