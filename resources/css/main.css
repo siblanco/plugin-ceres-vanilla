@@ -92,5 +92,10 @@
 .footer__payments {
   padding-top: 3rem;
   padding-bottom: 3rem; }
-  .footer__payments img {
-    max-width: 100%; }
+  .footer__payments--logos {
+    display: block; }
+    .footer__payments--logos img {
+      max-width: 100%;
+      margin: 0 auto; }
+    .footer__payments--logos p {
+      text-align: center; }

@@ -136,8 +136,16 @@ $blau: #0b0c26;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 
-		img {
-			max-width: 100%;
-		}
+		&--logos {
+			display: block;
+
+			img {
+				max-width: 100%;
+				margin: 0 auto;
+			}
+			p {
+				text-align: center;
+			}
+		}		
 	}
 }
