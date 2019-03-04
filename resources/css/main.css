@@ -73,5 +73,15 @@
     @media screen and (min-width: 768px) {
       .frontpage-kategorien__bild {
         display: block; } }
-  .frontpage-kategorien img {
-    max-width: 100%; }
+    .frontpage-kategorien__bild img {
+      max-width: 100%; }
+  .frontpage-kategorien__button {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    padding: 5px 35px; }
+    .frontpage-kategorien__button span {
+      margin-left: 1rem; }
