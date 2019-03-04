@@ -2,6 +2,8 @@ $pink: #c70c6f;
 $gelb: #dea800;
 $blau: #0b0c26;
 
+
+// Frontpage / Homepage
 .frontpage {
 
 	&-teasers {
@@ -119,6 +121,20 @@ $blau: #0b0c26;
 			span {
 				margin-left: 1rem;
 			}
+		}
+	}
+}
+
+// !Homepage
+
+// Footer
+.footer {
+	&__payments {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+		img {
+			max-width: 100%;
 		}
 	}
 }
