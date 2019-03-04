@@ -30,6 +30,7 @@
 		<div class="container-fluid frontpage-kategorien">
 			<div class="row">
 	{% for child in childCat %}
+		{% if (loop.index0 & 1) %}
 				<div class="col-12 col-md-6">
 					<img src="{{ plugin_path('CeresVanilla')}}/images/frontpage/home-{{ child.details[0].nameUrl }}.jpg" alt="{{ child.details[0].name }}">
 				</div>
@@ -39,6 +40,17 @@
 					<p>{{ child.details[0].description }}</p>
 					<a href="/stars-designer/{{ child.details[0].nameUrl }}">Zu {{ child.details[0].name }}</a>
 				</div>
+		{% else %}
+				<div class="col-12 col-md-6">
+					<img src="{{ plugin_path('CeresVanilla')}}/images/frontpage/sterne-{{ child.details[0].nameUrl }}.jpg" alt="{{ child.details[0].name }}">
+					<h2>{{ child.details[0].name }}</h2>
+					<p>{{ child.details[0].description }}</p>
+					<a href="/stars-designer/{{ child.details[0].nameUrl }}">Zu {{ child.details[0].name }}</a>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{ plugin_path('CeresVanilla')}}/images/frontpage/home-{{ child.details[0].nameUrl }}.jpg" alt="{{ child.details[0].name }}">
+				</div>
+		{% endif %}		
 	{% endfor %}
 			</div>
 		</div>
