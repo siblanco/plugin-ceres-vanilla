@@ -85,3 +85,9 @@
     padding: 5px 35px; }
     .frontpage-kategorien__button span {
       margin-left: 1rem; }
+
+.footer__payments {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .footer__payments img {
+    max-width: 100%; }
