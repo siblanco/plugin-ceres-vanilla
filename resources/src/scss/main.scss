@@ -91,6 +91,7 @@ $blau: #0b0c26;
 			display: flex;
 			flex-flow: column wrap;
 			justify-content: center;
+			align-items: center;
 			margin-bottom: 2rem;
 
 			@media screen and (min-width: 768px) {
@@ -117,9 +118,11 @@ $blau: #0b0c26;
 			border: 1px solid #fff;
 			border-radius: 35px;
 			padding: 5px 35px;
+			margin: 1rem auto;
 
 			span {
 				margin-left: 1rem;
+				font-size: 2rem;
 			}
 		}
 	}
