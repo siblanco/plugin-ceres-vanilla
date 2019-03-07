@@ -66,6 +66,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem; }
+    .frontpage-kategorien__text img {
+      max-width: 100%; }
     @media screen and (min-width: 768px) {
       .frontpage-kategorien__text {
         margin-bottom: 0; } }
@@ -92,10 +94,17 @@
 .footer__payments {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+  .footer__payments .col-sm-6:first-child {
+    margin-bottom: 50px; }
+    @media screen and (min-width: 576px) {
+      .footer__payments .col-sm-6:first-child {
+        margin-bottom: 0; } }
   .footer__payments--logos {
-    display: block; }
+    display: block;
+    text-align: center; }
     .footer__payments--logos img {
       max-width: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 10px; }
     .footer__payments--logos p {
       text-align: center; }

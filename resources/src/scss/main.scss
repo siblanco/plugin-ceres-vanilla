@@ -94,6 +94,10 @@ $blau: #0b0c26;
 			align-items: center;
 			margin-bottom: 2rem;
 
+			img {
+				max-width: 100%;
+			}
+
 			@media screen and (min-width: 768px) {
 				margin-bottom: 0;
 			}
@@ -136,12 +140,24 @@ $blau: #0b0c26;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 
+		.col-sm-6 {
+			&:first-child {
+				margin-bottom: 50px;
+
+				@media screen and (min-width: 576px) {
+					margin-bottom: 0;
+				}
+			}
+		}
+
 		&--logos {
 			display: block;
+			text-align: center;
 
 			img {
 				max-width: 100%;
 				margin: 0 auto;
+				margin-bottom: 10px;
 			}
 			p {
 				text-align: center;
