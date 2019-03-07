@@ -1,0 +1,31 @@
+// Footer
+.footer {
+	&__payments {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+		.col-sm-6 {
+			&:first-child {
+				margin-bottom: 50px;
+
+				@media screen and (min-width: 576px) {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&--logos {
+			display: block;
+			text-align: center;
+
+			img {
+				max-width: 100%;
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+			p {
+				text-align: center;
+			}
+		}		
+	}
+}
