@@ -44,31 +44,34 @@ h4 {
 h5 {
   font-size: 1.8rem; }
 
-.footer__payments {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-  .footer__payments .col-sm-6:first-child {
-    margin-bottom: 50px; }
-    @media screen and (min-width: 576px) {
-      .footer__payments .col-sm-6:first-child {
-        margin-bottom: 0; } }
-  .footer__payments--logos {
-    display: block;
-    text-align: center; }
-    .footer__payments--logos img {
-      max-width: 100%;
-      margin: 0 auto;
-      margin-bottom: 10px; }
-    .footer__payments--logos p {
+.footer {
+  border-top: 1px solid #0b0c26; }
+  .footer__payments {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .footer__payments .col-sm-6:first-child {
+      margin-bottom: 50px; }
+      @media screen and (min-width: 576px) {
+        .footer__payments .col-sm-6:first-child {
+          margin-bottom: 0; } }
+    .footer__payments--logos {
+      display: block;
       text-align: center; }
-
-.footer__links {
-  background-color: #111; }
-  .footer__links .static-link-list a {
-    color: #fff;
-    transition: all .2s; }
-    .footer__links .static-link-list a:hover {
-      color: rgba(255, 255, 255, 0.8); }
+      .footer__payments--logos img {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+      .footer__payments--logos p {
+        font-size: 1.2rem;
+        text-align: center; }
+  .footer__links {
+    background-color: #111;
+    font-size: 1.3rem; }
+    .footer__links .static-link-list a {
+      color: #fff;
+      transition: all .2s; }
+      .footer__links .static-link-list a:hover {
+        color: rgba(255, 255, 255, 0.8); }
 
 .frontpage-teasers {
   min-height: 30rem;

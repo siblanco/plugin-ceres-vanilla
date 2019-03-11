@@ -1,5 +1,6 @@
 // Footer
 .footer {
+	border-top: 1px solid $blau;
 	&__payments {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
@@ -24,6 +25,7 @@
 				margin-bottom: 10px;
 			}
 			p {
+				font-size: 1.2rem;
 				text-align: center;
 			}
 		}		
@@ -31,6 +33,7 @@
 
 	&__links {
 		background-color: #111;
+		font-size: 1.3rem;
 
 		.static-link-list {
 			a {
