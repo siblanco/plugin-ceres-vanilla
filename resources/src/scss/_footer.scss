@@ -28,4 +28,18 @@
 			}
 		}		
 	}
+
+	&__links {
+		background-color: #111;
+
+		.static-link-list {
+			a {
+				color: #fff;
+				transition: all .2s;
+				&:hover {
+					color: rgba(#fff, .8);
+				}
+			}
+		}
+	}
 }

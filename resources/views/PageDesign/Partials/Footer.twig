@@ -1,5 +1,5 @@
 <!-- Insert markup for footer here -->
-<footer>
+<footer class="footer">
 	{# Back-Top Button #}
 	<div class="{% if topButtonPosition == "right" %}back-to-top{% else %}back-to-top-center{% endif %} hidden-sm-down">
         <i class="fa fa-chevron-up"></i>
@@ -31,7 +31,7 @@
   {# /// Payments #}
 
 	{% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
-	  <div class="copyright text-center my-3">
+	  <div class="copyright text-center pt-4 pb-3 footer__links">
 	      <div class="static-link-list">
           {% autoescape false %}
             <a href="{{ urls.cancellationRights }}">{{ trans("Ceres::Template.footerCancellationRight", {"hyphen": "&shy;"}) }}</a>
