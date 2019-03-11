@@ -44,6 +44,14 @@ h4 {
 h5 {
   font-size: 1.8rem; }
 
+.page-content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .page-content {
+      margin-top: 3rem;
+      margin-bottom: 3rem; } }
+
 .footer {
   border-top: 1px solid #0b0c26; }
   .footer__payments {
@@ -172,3 +180,20 @@ h5 {
     .frontpage-kategorien__button span {
       margin-left: 1rem;
       font-size: 2rem; }
+
+.entfernen {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .entfernen {
+      margin-top: 3rem;
+      margin-bottom: 3rem; } }
+  .entfernen iframe {
+    width: 100%;
+    min-height: 25rem; }
+    @media screen and (min-width: 768px) {
+      .entfernen iframe {
+        min-height: 35rem; } }
+    @media screen and (min-width: 1200px) {
+      .entfernen iframe {
+        min-height: 50rem; } }

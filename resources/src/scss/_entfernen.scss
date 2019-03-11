@@ -1,0 +1,19 @@
+.entfernen {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	@media screen and (min-width: 768px) {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	iframe {
+		width: 100%;
+		min-height: 25rem;
+		@media screen and (min-width: 768px) {
+			min-height: 35rem;
+		}
+		@media screen and (min-width: 1200px) {
+			min-height: 50rem;
+		}
+	}
+}
