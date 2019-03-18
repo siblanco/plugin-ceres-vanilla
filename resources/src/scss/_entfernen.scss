@@ -6,14 +6,26 @@
 		margin-bottom: 3rem;
 	}
 
-	iframe {
-		width: 100%;
-		min-height: 25rem;
-		@media screen and (min-width: 768px) {
-			min-height: 35rem;
-		}
-		@media screen and (min-width: 1200px) {
-			min-height: 50rem;
+	&__video {
+		padding: 0;
+
+		.row {
+			padding: 0;
+
+			.col-12 {
+				padding: 0;
+			}
+
+			iframe {
+				width: 100%;
+				min-height: 25rem;
+				@media screen and (min-width: 768px) {
+					min-height: 35rem;
+				}
+				@media screen and (min-width: 1200px) {
+					min-height: 50rem;
+				}
+			}
 		}
 	}
 }
