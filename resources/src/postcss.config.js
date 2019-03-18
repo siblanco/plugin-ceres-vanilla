@@ -1,7 +1,8 @@
 module.exports = {
-  // parser: 'scss',
-  plugins: [
-    require('autoprefixer'),
-    require('cssnano')
-  ]
+    plugins: [
+      require('autoprefixer'),
+      require('cssnano')({
+      	preset: 'default',
+      })
+    ]
 }

@@ -25,6 +25,11 @@
             "description"   :"Add changes to the CSS file"
         },
         {
+            "key"           :"CeresVanilla\\Containers\\CeresVanillaScripts",
+            "name"          :"Scripts",
+            "description"   :"Add additional scripts"
+        },
+        {
             "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer1",
             "name"          :"First item list",
             "description"   :"Display a configurable list of items in your online store"
